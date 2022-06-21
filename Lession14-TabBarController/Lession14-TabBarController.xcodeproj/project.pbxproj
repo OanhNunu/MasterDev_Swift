@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA62F1428617FF500943AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA62F1328617FF500943AF9 /* AppDelegate.swift */; };
+		FDA62F1628617FF500943AF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA62F1528617FF500943AF9 /* SceneDelegate.swift */; };
+		FDA62F1828617FF500943AF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA62F1728617FF500943AF9 /* ViewController.swift */; };
+		FDA62F1B28617FF500943AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA62F1928617FF500943AF9 /* Main.storyboard */; };
+		FDA62F1D28617FF900943AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA62F1C28617FF900943AF9 /* Assets.xcassets */; };
+		FDA62F2028617FF900943AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA62F1E28617FF900943AF9 /* LaunchScreen.storyboard */; };
+		FDA630252861E11300943AF9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA630232861E11300943AF9 /* ProfileViewController.swift */; };
+		FDA630262861E11300943AF9 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA630242861E11300943AF9 /* ProfileViewController.xib */; };
+		FDA630292861E12500943AF9 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA630272861E12500943AF9 /* MessagesViewController.swift */; };
+		FDA6302A2861E12500943AF9 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA630282861E12500943AF9 /* MessagesViewController.xib */; };
+		FDA6302D2861E13400943AF9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6302B2861E13400943AF9 /* FriendsViewController.swift */; };
+		FDA6302E2861E13400943AF9 /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA6302C2861E13400943AF9 /* FriendsViewController.xib */; };
+		FDA630312861E14000943AF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6302F2861E14000943AF9 /* HomeViewController.swift */; };
+		FDA630322861E14000943AF9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA630302861E14000943AF9 /* HomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FDA62F1028617FF500943AF9 /* Lession14-TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lession14-TabBarController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA62F1328617FF500943AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDA62F1528617FF500943AF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDA62F1728617FF500943AF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDA62F1A28617FF500943AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDA62F1C28617FF900943AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA62F1F28617FF900943AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDA62F2128617FF900943AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA630232861E11300943AF9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FDA630242861E11300943AF9 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		FDA630272861E12500943AF9 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FDA630282861E12500943AF9 /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		FDA6302B2861E13400943AF9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		FDA6302C2861E13400943AF9 /* FriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
+		FDA6302F2861E14000943AF9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FDA630302861E14000943AF9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA62F0D28617FF500943AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA62F0728617FF500943AF9 = {
+			isa = PBXGroup;
+			children = (
+				FDA62F1228617FF500943AF9 /* Lession14-TabBarController */,
+				FDA62F1128617FF500943AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA62F1128617FF500943AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA62F1028617FF500943AF9 /* Lession14-TabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA62F1228617FF500943AF9 /* Lession14-TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6303A2861E20000943AF9 /* Models */,
+				FDA630332861E14400943AF9 /* AppDelegate */,
+				FDA630342861E15C00943AF9 /* Controllers */,
+				FDA630392861E1EF00943AF9 /* Views */,
+				FDA6303B2861E20E00943AF9 /* Resources */,
+				FDA62F2128617FF900943AF9 /* Info.plist */,
+				FDA62F1728617FF500943AF9 /* ViewController.swift */,
+				FDA62F1928617FF500943AF9 /* Main.storyboard */,
+			);
+			path = "Lession14-TabBarController";
+			sourceTree = "<group>";
+		};
+		FDA630332861E14400943AF9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FDA62F1328617FF500943AF9 /* AppDelegate.swift */,
+				FDA62F1528617FF500943AF9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FDA630342861E15C00943AF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA630352861E16A00943AF9 /* ProfileVC */,
+				FDA630362861E17A00943AF9 /* MessagesVC */,
+				FDA630382861E19500943AF9 /* FriendsVC */,
+				FDA630372861E18B00943AF9 /* HomeVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FDA630352861E16A00943AF9 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA630232861E11300943AF9 /* ProfileViewController.swift */,
+				FDA630242861E11300943AF9 /* ProfileViewController.xib */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		FDA630362861E17A00943AF9 /* MessagesVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA630272861E12500943AF9 /* MessagesViewController.swift */,
+				FDA630282861E12500943AF9 /* MessagesViewController.xib */,
+			);
+			path = MessagesVC;
+			sourceTree = "<group>";
+		};
+		FDA630372861E18B00943AF9 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6302F2861E14000943AF9 /* HomeViewController.swift */,
+				FDA630302861E14000943AF9 /* HomeViewController.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		FDA630382861E19500943AF9 /* FriendsVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA6302B2861E13400943AF9 /* FriendsViewController.swift */,
+				FDA6302C2861E13400943AF9 /* FriendsViewController.xib */,
+			);
+			path = FriendsVC;
+			sourceTree = "<group>";
+		};
+		FDA630392861E1EF00943AF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDA6303A2861E20000943AF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDA6303B2861E20E00943AF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDA62F1C28617FF900943AF9 /* Assets.xcassets */,
+				FDA62F1E28617FF900943AF9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA62F0F28617FF500943AF9 /* Lession14-TabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA62F2428617FF900943AF9 /* Build configuration list for PBXNativeTarget "Lession14-TabBarController" */;
+			buildPhases = (
+				FDA62F0C28617FF500943AF9 /* Sources */,
+				FDA62F0D28617FF500943AF9 /* Frameworks */,
+				FDA62F0E28617FF500943AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lession14-TabBarController";
+			productName = "Lession14-TabBarController";
+			productReference = FDA62F1028617FF500943AF9 /* Lession14-TabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA62F0828617FF500943AF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FDA62F0F28617FF500943AF9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FDA62F0B28617FF500943AF9 /* Build configuration list for PBXProject "Lession14-TabBarController" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA62F0728617FF500943AF9;
+			productRefGroup = FDA62F1128617FF500943AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA62F0F28617FF500943AF9 /* Lession14-TabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA62F0E28617FF500943AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA62F2028617FF900943AF9 /* LaunchScreen.storyboard in Resources */,
+				FDA6302A2861E12500943AF9 /* MessagesViewController.xib in Resources */,
+				FDA6302E2861E13400943AF9 /* FriendsViewController.xib in Resources */,
+				FDA62F1D28617FF900943AF9 /* Assets.xcassets in Resources */,
+				FDA630262861E11300943AF9 /* ProfileViewController.xib in Resources */,
+				FDA630322861E14000943AF9 /* HomeViewController.xib in Resources */,
+				FDA62F1B28617FF500943AF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA62F0C28617FF500943AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA630292861E12500943AF9 /* MessagesViewController.swift in Sources */,
+				FDA62F1828617FF500943AF9 /* ViewController.swift in Sources */,
+				FDA62F1428617FF500943AF9 /* AppDelegate.swift in Sources */,
+				FDA630252861E11300943AF9 /* ProfileViewController.swift in Sources */,
+				FDA6302D2861E13400943AF9 /* FriendsViewController.swift in Sources */,
+				FDA630312861E14000943AF9 /* HomeViewController.swift in Sources */,
+				FDA62F1628617FF500943AF9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDA62F1928617FF500943AF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA62F1A28617FF500943AF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDA62F1E28617FF900943AF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA62F1F28617FF900943AF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA62F2228617FF900943AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDA62F2328617FF900943AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA62F2528617FF900943AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lession14-TabBarController/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.free.demo.Lession14-TabBarController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA62F2628617FF900943AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lession14-TabBarController/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.free.demo.Lession14-TabBarController";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA62F0B28617FF500943AF9 /* Build configuration list for PBXProject "Lession14-TabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA62F2228617FF900943AF9 /* Debug */,
+				FDA62F2328617FF900943AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA62F2428617FF900943AF9 /* Build configuration list for PBXNativeTarget "Lession14-TabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA62F2528617FF900943AF9 /* Debug */,
+				FDA62F2628617FF900943AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA62F0828617FF500943AF9 /* Project object */;
+}
