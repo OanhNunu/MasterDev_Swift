@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Lession11_TableView" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="khP-C2-rDX" id="Q2c-wm-Q0S"/>
+                <outlet property="userImage" destination="VJ5-yh-BiO" id="EXk-CC-bZC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-yh-BiO">
+                    <rect key="frame" x="157" y="135.5" width="100" height="97"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VJ5-yh-BiO" secondAttribute="height" multiplier="1:1" id="HN1-Nz-MKQ"/>
+                        <constraint firstAttribute="height" constant="100" id="tX5-q2-b8z"/>
+                    </constraints>
+                    <imageReference key="image" image="person.fill" catalog="system" renderingMode="original"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khP-C2-rDX">
+                    <rect key="frame" x="100" y="244" width="214" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gSs-op-vpD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="khP-C2-rDX" secondAttribute="trailing" constant="100" id="3pb-Np-vfe"/>
+                <constraint firstItem="khP-C2-rDX" firstAttribute="top" secondItem="VJ5-yh-BiO" secondAttribute="bottom" constant="10" id="Aqr-PR-qSq"/>
+                <constraint firstItem="VJ5-yh-BiO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MAb-hO-AzN"/>
+                <constraint firstItem="khP-C2-rDX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Xod-kj-uHq"/>
+                <constraint firstItem="VJ5-yh-BiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="YJ4-1Z-Ci1"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
