@@ -64,7 +64,7 @@ extension ViewController: UITableViewDelegate {
         
         let vc = DetailViewController()
         //vc.name = names[indexPath.section][indexPath.row]
-        vc.name = persons[indexPath.section][indexPath.row].userName ?? ""
+        vc.name = persons[indexPath.section][indexPath.row].userName
         vc.imageName = persons[indexPath.section][indexPath.row].userImage
         self.navigationController?.pushViewController(vc, animated: true)
     }

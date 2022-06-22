@@ -8,9 +8,9 @@
 import Foundation
 
 class UserModel: Decodable {
-    
-    var userName: String?
-    var userImage: String?
+    //biến để optional hoặc giá trị default thì không có init()
+    var userName: String
+    var userImage: String
     
     init(userName: String, userImage: String) {
         self.userName = userName
