@@ -24,6 +24,7 @@
 		FDA630CF2864593300943AF9 /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA630CD2864593300943AF9 /* NewViewController.xib */; };
 		FDA630DC28645DBC00943AF9 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA630DA28645DBC00943AF9 /* User+CoreDataClass.swift */; };
 		FDA630DD28645DBC00943AF9 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA630DB28645DBC00943AF9 /* User+CoreDataProperties.swift */; };
+		FDA630DF2864D46C00943AF9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA630DE2864D46C00943AF9 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FDA630CD2864593300943AF9 /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		FDA630DA28645DBC00943AF9 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FDA630DB28645DBC00943AF9 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FDA630DE2864D46C00943AF9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				FDA630AA286453EE00943AF9 /* Lession19_CoreData.xcdatamodeld */,
+				FDA630DE2864D46C00943AF9 /* UserModel.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FDA630A4286453EE00943AF9 /* SceneDelegate.swift in Sources */,
 				FDA630DD28645DBC00943AF9 /* User+CoreDataProperties.swift in Sources */,
 				FDA630CA2864592300943AF9 /* EditViewController.swift in Sources */,
+				FDA630DF2864D46C00943AF9 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

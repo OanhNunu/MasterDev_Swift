@@ -19,8 +19,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
-        tableView.delegate = self
-        tableView.dataSource = self
         
         tableView.register(UINib(nibName: "HomeCell", bundle: .main), forCellReuseIdentifier: "cell")
         
@@ -30,10 +28,21 @@ class HomeViewController: UIViewController {
         let rightBarItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addVC))
         self.navigationItem.rightBarButtonItem = rightBarItem
         
-        save(name: "Tí", age: 10, gender: true)
-        save(name: "Tèo", age: 12, gender: true)
-        save(name: "Linh", age: 9, gender: false)
-        save(name: "Trang", age: 8, gender: false)
+        
+        //saveData()
+        setupTableView()
+    }
+    
+    func saveData() {
+        save(name: "Tí", age: 10, gender: 1)
+        save(name: "Tèo", age: 12, gender: 1)
+        save(name: "Linh", age: 9, gender: 2)
+        save(name: "Trang", age: 8, gender: 3)
+    }
+    
+    func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +68,7 @@ class HomeViewController: UIViewController {
         let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
         
         //Predicate: lọc điều kiện có giới tính male
-        fetchRequest.predicate = NSPredicate(format: "gender == true")
+        //fetchRequest.predicate = NSPredicate(format: "gender == true")
         
         // Configure Fetch Request
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
@@ -76,6 +85,7 @@ class HomeViewController: UIViewController {
         
         do {
             try fetchedResultsController.performFetch()
+            self.tableView.reloadData()
         } catch {
             fatalError("Failed to initialize FetchedResultsController:\(error)")
         }
@@ -84,7 +94,7 @@ class HomeViewController: UIViewController {
     }
     
     //MARK: - Dummy Data
-    func save(name: String, age: Int, gender: Bool) {
+    func save(name: String, age: Int, gender: Int) {
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
@@ -111,14 +121,14 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeCell
         let user = fetchedResultsController.object(at: indexPath)
         cell.nameLabel.text = user.name
-        cell.genderLabel.text = user.gender ? "Male": "Female"
+        cell.genderLabel.text = Gender(rawValue: Int(user.gender))?.title
         cell.ageLabel.text = "\(user.age) years old"
         
         return cell
